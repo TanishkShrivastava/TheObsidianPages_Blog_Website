@@ -1,0 +1,28 @@
+
+.navbar{
+    display: inline-flex;
+    background-color: black;
+    color: whitesmoke;
+}
+.container-fluid{
+    display: flex;
+    justify-content: right;
+}
+
+#theBlogsOfTheWebsites {
+    background-color: slategrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 40px;
+}
+
+body{
+    background-image: url(BlogWebsiteProject\public\Images\BackgroundImage.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}

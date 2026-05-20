@@ -1,0 +1,16 @@
+{
+  "name": "blogwebsitepackage",
+  "version": "1.0.0",
+  "description": "This is the node package for the Blog Website.",
+  "license": "ISC",
+  "author": "Tanishk Shrivastava",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1"
+  }
+}

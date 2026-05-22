@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="styles/createPost_Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+
+    <div class="backButton">
+        <a href="/">
+            <img src="Images/leftArrow.svg" height="40px">
+        
+        </a>
+    </div>
+    
+
+    <h1>Create a Post Here !! </h1>
+
+    <form action="/create" method="POST">
+        <ul class="personalDetails">
+           <li><img src="/Images/gmail.svg" width="40">: <input type="email"></li> 
+            <li><img src="/Images/instalogo.svg.svg" width="40">: <input type="url"></li>
+            <li><img src="/Images/facebook.svg.svg" width="40">: <input type="url"></li> 
+            <li><img src="/Images/twitter.svg.svg" width="40">: <input type="url"></li>
+        </ul>
+
+        <ul class="TitleAndContent">
+            <label>Title:<br></label>
+            <input type="text">
+            <br>
+
+            Enter your content here <br>
+            <textarea rows="50"></textarea>
+        </ul>
+        
+
+    </form>
+    <div class="endButtons">
+        <button class="btns" type="submit">Submit</button>
+        <button class="btns" type="reset">Clear All</button>
+    </div>
+    
+</body>
+</html>

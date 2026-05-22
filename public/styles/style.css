@@ -1,28 +1,158 @@
-
 .navbar{
-    display: inline-flex;
-    background-color: black;
-    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 25px;
+    background: rgba(15,15,15,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    color: white;
 }
+
+h1{
+
+    color: #f5f5f5;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+}
+
+
 .container-fluid{
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #theBlogsOfTheWebsites {
-    background-color: slategrey;
+    background: linear-gradient(to bottom, #dfe6ec);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    flex-wrap: wrap;
+    min-height: 100vh;
     gap: 40px;
+    padding: 60px;
+}
+
+.midCreateSection{
+    display: inline;
+    
+
 }
 
 body{
-    background-image: url(BlogWebsiteProject\public\Images\BackgroundImage.png);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background: linear-gradient(to bottom, #1a1a1a, #242424);
+    min-height: 100vh;
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* BLOG CARDS */
+
+.cardone{
+
+    transition: 0.3s;
+
+    border: none;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.cardone:hover{
+
+    transform: translateY(-6px);
+}
+
+/* CARD IMAGES */
+
+.card-img-top{
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+/* LOGIN SECTION */
+
+.LogButton{
+    background: linear-gradient(to right, #111, #2b2b2b);
+    color: white;
+    height: 40px;
+    padding: 0px 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.LogButton{
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+.signUpButton a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.signUpButton a:hover{
+    color: #c0c0c0;
+}
+
+
+.LoginSignUpButtons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding-right: 30px;
+}
+
+/* CREATE POST BUTTON */
+
+.createPost{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(to right, #1f1f1f, #2f2f2f);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s;
+}
+
+.createPost:hover{
+    background: linear-gradient(to right, #2a2a2a, #3a3a3a);
+    transform: translateY(-2px);
+}
+/* LINKS */
+
+a{
+
+    text-decoration: none;
+}
+
+/* HEADING */
+
+h1{
+
+    color: white;
+
+    font-weight: bold;
+
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
